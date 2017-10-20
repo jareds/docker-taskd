@@ -14,7 +14,7 @@ EXPOSE 53589
 RUN apt-get update && \
 apt-get upgrade -y && \
 apt-get install -y --no-install-recommends git ca-certificates build-essential cmake gnutls-bin libgnutls28-dev uuid-dev && \
-    git clone https://git.tasktools.org/scm/tm/taskd.git /opt/taskd && \
+    git clone https://git.tasktools.org/TM/taskd.git /opt/taskd && \
     cd /opt/taskd && \
     git checkout 1.1.0 && \
     cmake . && \
